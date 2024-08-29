@@ -60,7 +60,7 @@ export default function Component() {
 								{[
 									{
 										title: "予測市場",
-										image: "/prediction.jpg",
+										image: "/stock.webp",
 										description: "市場心理を可視化し、新たな価値を創出します。",
 									},
 									{
