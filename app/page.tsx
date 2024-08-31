@@ -14,7 +14,7 @@ import {
 import { Button } from "@/components/ui/button";
 import Header from "@/components/Header/Header";
 import { motion } from "framer-motion";
-
+import Footer from "@/components/Footer/Footer";
 export default function Component() {
 	return (
 		<>
@@ -39,7 +39,9 @@ export default function Component() {
 							</h1>
 							<p className="text-sm md:text-2xl max-w-2xl">
 								持続可能な社会に向けた
-								&ldquo;新しいコンテクスト&rdquo;を予測し、テクノロジーで社会実装する
+								&ldquo;新しいコンテクスト&rdquo;を予測し、
+								<br />
+								テクノロジーで社会実装する
 							</p>
 						</div>
 					</div>
@@ -61,18 +63,20 @@ export default function Component() {
 									{
 										title: "予測市場",
 										image: "/stock.webp",
-										description: "市場心理を可視化し、新たな価値を創出します。",
+										description:
+											"潜在的な市場心理を可視化し、新たな価値を創出します。",
 									},
 									{
 										title: "無期限先物オプション",
-										image: "/new-context.jpg",
-										description: "バイナリオプション以外の金融商品を設計します",
+										image: "/stock.png",
+										description:
+											"バイナリオプション以外のデリバティブ商品を設計します",
 									},
 									{
 										title: "分散型オラクル",
-										image: "/implementation.jpg",
+										image: "/oracle.png",
 										description:
-											"分散型オラクルでリスティングやエグゼキューションの透明性を高めます",
+											"リスティングやエグゼキューションの透明性を高めます",
 									},
 								].map((item, index) => (
 									<motion.div
@@ -105,7 +109,7 @@ export default function Component() {
 						</div>
 					</section>
 
-					{/* Articlesセクション */}
+					{/* Articlesセクション
 					<section className="py-24 bg-black text-white px-10">
 						<div className="container mx-auto px-4 ">
 							<h2 className="text-5xl font-bold mb-8 text-left">Articles </h2>
@@ -162,74 +166,9 @@ export default function Component() {
 								))}
 							</div>
 						</div>
-					</section>
+					</section> */}
+					<Footer />
 				</main>
-
-				{/* Footer */}
-				<footer className="bg-gray-900 text-white py-12 px-10">
-					<div className="container mx-auto px-4">
-						<div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-							<div className="flex flex-col items-center md:items-start">
-								<h3 className="text-2xl font-semibold mb-6 flex items-center">
-									<MapPin className="mr-2" size={24} />
-									会社情報
-								</h3>
-								<p className="text-center md:text-left mb-2">
-									株式会社 Digital Garbage
-								</p>
-								<p className="text-center md:text-left">
-									〒100-0001 東京都千代田区1-1-1
-								</p>
-							</div>
-							<div className="flex flex-col items-center md:items-start">
-								<h3 className="text-2xl font-semibold mb-6 flex items-center">
-									<Mail className="mr-2" size={24} />
-									お問い合わせ
-								</h3>
-								<p className="flex items-center mb-2">
-									<Mail className="mr-2" size={18} />
-									<span>info@example.com</span>
-								</p>
-								<p className="flex items-center">
-									<Phone className="mr-2" size={18} />
-									<span>03-1234-5678</span>
-								</p>
-							</div>
-							<div className="flex flex-col items-center md:items-start">
-								<h3 className="text-2xl font-semibold mb-6">フォローする</h3>
-								<div className="flex space-x-6">
-									<a
-										href="#"
-										className="hover:text-blue-400 transition-colors duration-300"
-									>
-										<Facebook size={24} />
-									</a>
-									<a
-										href="#"
-										className="hover:text-blue-400 transition-colors duration-300"
-									>
-										<Twitter size={24} />
-									</a>
-									<a
-										href="#"
-										className="hover:text-pink-400 transition-colors duration-300"
-									>
-										<Instagram size={24} />
-									</a>
-									<a
-										href="#"
-										className="hover:text-blue-600 transition-colors duration-300"
-									>
-										<Linkedin size={24} />
-									</a>
-								</div>
-							</div>
-						</div>
-						<div className="mt-12 pt-8 border-t border-gray-700 text-center">
-							<p>&copy; 2024 Digital Garbage. All rights reserved.</p>
-						</div>
-					</div>
-				</footer>
 			</div>
 		</>
 	);
